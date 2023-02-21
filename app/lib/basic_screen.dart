@@ -38,4 +38,4 @@ class BasicScreen extends StatelessWidget {
   }
 }
 
-// comment
+// Text won't display during debug mode 
