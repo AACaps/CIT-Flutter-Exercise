@@ -6,9 +6,10 @@ class BasicScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
-        title: Text('Welcome to Flutter'),
+        backgroundColor: Colors.lightGreen[800],
+        title: Text('Dashboard'),
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -16,19 +17,24 @@ class BasicScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          AspectRatio(
-            aspectRatio: 1.0,
-            child: ImmutableWidget(),
-          ),
-          TextLayout()
+      body: SingleChildScrollView(
+          child: Column(
+        children: <Widget>[
+          Image.asset('images/preserv.app.png'),
+          TextLayout(),
         ],
-      ),
+      )
+          // children: <Widget>[
+          //   Image.asset('images/boat_orchid.jpg'),
+          //   Image.asset('images/moth_orchid.jpg'),
+          //   Image.asset('images/vanda_orchid.jpg'),
+          //   Image.asset('images/wasp.jpg'),
+          //   TextLayout(),
+          // ],
+          ),
       drawer: Drawer(
         child: Container(
-          color: Colors.lightBlue,
+          color: Colors.lightGreen[800],
           child: Center(
             child: Text("I'm a drawer!"),
           ),
@@ -37,5 +43,3 @@ class BasicScreen extends StatelessWidget {
     );
   }
 }
-
-// Text won't display during debug mode 
