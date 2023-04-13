@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'immutable_widget.dart';
 import 'text_layout.dart';
+import 'app_drawer.dart';
 
 class BasicScreen extends StatelessWidget {
   @override
@@ -9,7 +10,7 @@ class BasicScreen extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.lightGreen[800],
-        title: Text('Dashboard'),
+        title: Text('Home'),
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -32,14 +33,13 @@ class BasicScreen extends StatelessWidget {
           //   TextLayout(),
           // ],
           ),
-      drawer: Drawer(
-        child: Container(
-          color: Colors.lightGreen[800],
-          child: Center(
-            child: Text("I'm a drawer!"),
-          ),
-        ),
-      ),
+      drawer: AppDrawer(),
+      // drawer: Drawer(
+      //   child: Container(
+      //     color: Colors.lightGreen[800],
+      //     child: Center(
+      //       child: Text("I'm a drawer!"),
+      //     ),
     );
   }
 }
