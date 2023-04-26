@@ -66,6 +66,10 @@ flutter:
     - assets/images/moth_orchid.jpg
     - assets/images/vanda_orchid.jpg
     - assets/images/wasp.jpg
+    - assets/images/erigeron.jpg
+    - assets/images/gila.jpg
+    - assets/images/heartleaf.jpg
+    - assets/images/kittentail.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
