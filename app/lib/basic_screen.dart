@@ -1,19 +1,20 @@
 import 'package:flutter/material.dart';
-import 'immutable_widget.dart';
 import 'text_layout.dart';
 import 'app_drawer.dart';
 
 class BasicScreen extends StatelessWidget {
+  const BasicScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       appBar: AppBar(
         backgroundColor: Colors.lightGreen[800],
-        title: Text('Home'),
-        actions: <Widget>[
+        title: const Text('Home'),
+        actions: const <Widget>[
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(10.0),
             child: Icon(Icons.edit),
           )
         ],
@@ -22,7 +23,7 @@ class BasicScreen extends StatelessWidget {
           child: Column(
         children: <Widget>[
           Image.asset('images/preserv.app.png'),
-          TextLayout(),
+          const TextLayout(),
         ],
       )
           // children: <Widget>[
@@ -33,7 +34,7 @@ class BasicScreen extends StatelessWidget {
           //   TextLayout(),
           // ],
           ),
-      drawer: AppDrawer(),
+      drawer: const AppDrawer(),
       // drawer: Drawer(
       //   child: Container(
       //     color: Colors.lightGreen[800],

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class AppDrawer extends StatelessWidget {
+  const AppDrawer({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: [
-          const DrawerHeader(
+        children: const [
+          DrawerHeader(
             decoration: BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
@@ -19,17 +21,17 @@ class AppDrawer extends StatelessWidget {
             leading: Icon(
               Icons.home,
             ),
-            title: const Text('Home'),
+            title: Text('Home'),
           ),
           ListTile(
             leading: Icon(
               Icons.image_outlined,
             ),
-            title: const Text('Images'),
+            title: Text('Images'),
           ),
           ListTile(
             leading: Icon(Icons.settings_outlined),
-            title: const Text('Settings'),
+            title: Text('Settings'),
           ),
         ],
       ),

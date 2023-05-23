@@ -2,11 +2,13 @@ import 'package:flutter/material.dart';
 import 'dart:math' as Math;
 
 class ImmutableWidget extends StatelessWidget {
+  const ImmutableWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(color: Colors.green),
-      foregroundDecoration: BoxDecoration(
+      decoration: const BoxDecoration(color: Colors.green),
+      foregroundDecoration: const BoxDecoration(
         backgroundBlendMode: BlendMode.colorBurn,
         gradient: LinearGradient(
           begin: Alignment.topCenter,
@@ -34,7 +36,7 @@ class ImmutableWidget extends StatelessWidget {
                   offset: Offset.fromDirection(1.0, 30),
                 ),
               ],
-              borderRadius: BorderRadius.all(Radius.circular(20)),
+              borderRadius: const BorderRadius.all(Radius.circular(20)),
             ),
             child: Padding(
               padding: const EdgeInsets.all(50.0),
@@ -49,7 +51,7 @@ class ImmutableWidget extends StatelessWidget {
 
 Widget _buildShinyCircle() {
   return Container(
-    decoration: BoxDecoration(
+    decoration: const BoxDecoration(
       shape: BoxShape.circle,
       gradient: RadialGradient(
         colors: [

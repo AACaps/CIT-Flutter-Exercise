@@ -1,8 +1,9 @@
-import 'dart:html';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class TextLayout extends StatelessWidget {
+  const TextLayout({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -22,8 +23,8 @@ class TextLayout extends StatelessWidget {
 
         Center(
           child: Container(
-            padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-            child: Text(
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+            child: const Text(
               'This app contains a collection of various endangered plant species around the globe. '
               'Preserv.app aims to educate society on the importance of preserving nature, and life.',
             ),
