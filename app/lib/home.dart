@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:app/immutable_widget.dart';
 import 'home_screen_state.dart';
 import 'app_drawer.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.lightGreen[800],
-        actions: <Widget>[
+        actions: const <Widget>[
           Padding(
-            padding: const EdgeInsets.all(10.0),
+            padding: EdgeInsets.all(10.0),
             child: Icon(Icons.edit),
           ),
         ],
@@ -19,7 +20,7 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          HomeScreenTextField(),
+          const HomeScreenTextField(),
           Expanded(
             child: ListView(
               children: <Widget>[
@@ -36,18 +37,18 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
-      drawer: AppDrawer(),
+      drawer: const AppDrawer(),
     );
   }
 
   Widget _buildItem(String title, String description, String imagePath) {
     return Container(
       height: 120,
-      margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+      margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(8),
         color: Colors.lightGreen[100],
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.lightGreen,
             blurRadius: 2,
@@ -75,22 +76,22 @@ class HomeScreen extends StatelessWidget {
           ),
           Expanded(
             child: Padding(
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: Column(
                 mainAxisSize: MainAxisSize.max,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     title,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  SizedBox(height: 4),
+                  const SizedBox(height: 4),
                   Text(
                     description,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 16,
                     ),
                   ),

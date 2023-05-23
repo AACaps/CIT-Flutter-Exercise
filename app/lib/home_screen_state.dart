@@ -16,7 +16,7 @@ class _HomeScreenTextFieldState extends State<HomeScreenTextField> {
       padding: const EdgeInsets.all(20.0),
       child: TextField(
         controller: _textEditingController,
-        decoration: InputDecoration(
+        decoration: const InputDecoration(
           hintText: 'Type here',
         ),
       ),
