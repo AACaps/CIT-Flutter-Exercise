@@ -5,7 +5,7 @@ import 'app_drawer.dart';
 class BasicScreen extends StatelessWidget {
   const BasicScreen({super.key});
 
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: false,
