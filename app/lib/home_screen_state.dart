@@ -11,7 +11,7 @@ class _HomeScreenTextFieldState extends State<HomeScreenTextField> {
   final TextEditingController _textEditingController = TextEditingController();
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return Padding(
       padding: const EdgeInsets.all(20.0),
       child: TextField(
