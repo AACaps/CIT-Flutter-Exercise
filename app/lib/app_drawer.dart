@@ -1,4 +1,6 @@
+import 'package:app/flower_main_screen.dart';
 import 'package:flutter/material.dart';
+import 'about.dart';
 
 class AppDrawer extends StatelessWidget {
   const AppDrawer({super.key});
@@ -8,8 +10,8 @@ class AppDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: const [
-          DrawerHeader(
+        children: [
+          const DrawerHeader(
             decoration: BoxDecoration(
                 color: Colors.white,
                 image: DecorationImage(
@@ -18,18 +20,30 @@ class AppDrawer extends StatelessWidget {
             child: null,
           ),
           ListTile(
-            leading: Icon(
+            leading: const Icon(
               Icons.home,
             ),
-            title: Text('Home'),
+            title: const Text('Flowers'),
+             onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const FlowerMainScreen()),
+              );
+            },
           ),
           ListTile(
             leading: Icon(
-              Icons.image_outlined,
+              Icons.supervisor_account_rounded,
             ),
-            title: Text('Images'),
+            title: Text('About'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => aboutUs()),
+              );
+            },
           ),
-          ListTile(
+          const ListTile(
             leading: Icon(Icons.settings_outlined),
             title: Text('Settings'),
           ),
