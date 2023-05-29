@@ -10,7 +10,7 @@ class FlowerMainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flower Gallery'),
+        title: const Text('Endangered Plant Species'),
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
@@ -20,7 +20,7 @@ class FlowerMainScreen extends StatelessWidget {
               },
             );
           },
-        ),
+       ),
       ),
       drawer: const AppDrawer(),
       body: const FlowerMain()
