@@ -1,7 +1,6 @@
 import 'package:app/fetch_flowers.dart';
 import 'package:app/flower_main_screen.dart';
 import 'package:flutter/material.dart';
-import 'home.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 ThemeData themeData = ThemeData(primarySwatch: Colors.lightGreen);
